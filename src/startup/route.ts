@@ -10,5 +10,7 @@ export class Routes {
             res.status(200).json({ "Success": "server is running" })
         });
         app.use('/todo', todoRoutes)
+
+
     }
 }
