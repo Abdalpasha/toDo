@@ -1,0 +1,11 @@
+"use strict";
+exports.__esModule = true;
+var express_1 = require("express");
+var controller_1 = require("./../controller/controller");
+var todoControllerObj = new controller_1.TodoController();
+exports.todoRoutes = express_1.Router();
+exports.todoRoutes.post('/create', todoControllerObj.createTodo);
+exports.todoRoutes.get('/', todoControllerObj.GetAllTodo);
+exports.todoRoutes.get('/getByName', todoControllerObj.GetByName);
+exports.todoRoutes.get('/:todoId', todoControllerObj.GetById);
+exports.todoRoutes.put('/update/:todoId', todoControllerObj.updateByID);

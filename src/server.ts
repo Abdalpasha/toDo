@@ -1,12 +1,12 @@
 import express from "express"
-import bodyParser from "body-parser";
+import * as bodyParser from "body-parser";
 import {DB} from "./startup/db";
 import {Routes} from "./startup/route"
 
 class TodoApp{
     app : express.Application
     constructor(){
-        this.app = express()
+        this.app = express();
         this.app.listen(3000, 'localhost', () => 
         {console.log("Server is running on port 3000")})
         this.configBodyParser();

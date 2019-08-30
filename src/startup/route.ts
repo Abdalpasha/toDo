@@ -1,4 +1,4 @@
-import express from "express"
+import * as express from "express"
 import {todoRoutes} from "./../routes/todoRoutes"
 export class Routes {
     constructor() {

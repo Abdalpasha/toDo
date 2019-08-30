@@ -1,4 +1,4 @@
-import express from "express"
+import * as express from "express"
 import { todoModel } from './../model/toDoModel'
 
 export class TodoService {

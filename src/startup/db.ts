@@ -1,4 +1,4 @@
-import mongoose from "mongoose"
+import * as mongoose from "mongoose"
 export class DB{
     private static connectionString : string = "mongodb://localhost:27017/TodoDb";
     public static connectMongoDb(){
@@ -7,3 +7,4 @@ export class DB{
         .catch(err => {console.log("Db connection failed"); console.log(err);})
     }
 }
+
